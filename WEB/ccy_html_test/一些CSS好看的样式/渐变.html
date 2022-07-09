@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>css 渐变</title>
+    <style>
+      .content {
+        width: 100px;
+        /* height: 200px; */
+        background: pink; /* 针对不支持渐变的浏览器 */
+        background: -webkit-linear-gradient(#DC1010, #90ED5A, #2F57E8);
+        /*  Safari 5.1 到 6.0 */
+        background: -o-linear-gradient(#DC1010, #90ED5A, #2F57E8);
+        /*  Opera 11.6 到 12.0 */
+        background: -moz-linear-gradient(#DC1010, #90ED5A, #2F57E8);
+        /*  Fx 3.6 到 15 */
+        background: linear-gradient(#DC1010, #90ED5A, #2F57E8);
+        /* 标准语法（必须是最后一个） */
+      }
+</style>
+  </head>
+  <body>
+    <div class="content"></div>
+  </body>
+</html>

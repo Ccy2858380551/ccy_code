@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>体验css语法规范</title>
+
+    <style>
+        
+        /* 选择器{样式} */
+        /* 给谁改样式 {改什么样式}*/
+        /* 标签选择器 */
+        p  {
+            color: red;
+            /* 修改文字字体大小为12像素 */
+            font-size: 12px;
+        }
+        div {
+            color:pink;
+        }
+        /* class选择器,开发最常用*/
+        .aquamarine {
+            color:aquamarine;
+        }
+        .bule {
+            color: rgb(0, 149, 255);
+        }
+        /* .中文也可以但不建议 */
+        .red {
+           
+            /* 背景颜色 */
+            background-color: red;
+        }
+        .green {
+            background-color: green;
+        }
+        .font20 {
+            font-size: 20px;
+        }
+        .box {
+             width: 100px;
+            height: 100px;
+        }
+        /* id选择器  只能调用一次，别人切勿使用*/
+        #pink {
+            color: pink;
+        }
+        /* 通配符选择器,*将hmtl、body、div、span等都改变,也不需要去调用*/
+        * {
+            color: palegoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <p>这个标题是红色的</p>
+    <p>sdf</p>
+    <ul>
+        <li class="bule">
+            li标签是蓝的
+        </li>
+    </ul>
+    <div class="red bule font20 box" >粉色的</div>
+    <div class="green box">8</div>
+    <div class="red aquamarine box">绿的</div>
+    <div id="pink">这是id选择器</div>
+
+
+</body>
+</html>

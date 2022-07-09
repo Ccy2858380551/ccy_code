@@ -1,0 +1,35 @@
+body {
+    font: 25px/28px 'Microsoft yahei';
+}
+
+h1 {
+    font-weight: 400;
+    /*文字不加粗;*/
+    text-align: center;
+    /*文字水平居中*/
+}
+
+.red {
+    color: #ff0000;
+    font-size: 12px;
+    text-align: center;
+}
+
+.search_gray {
+    color: #ff66ff;
+}
+
+a {
+    /* 取消下划线 */
+    text-decoration: none;
+}
+
+p {
+    /* 首行缩进 */
+    text-indent: 2em;
+}
+
+.pic {
+
+    text-align: center;
+}

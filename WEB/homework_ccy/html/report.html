@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>崔春洋的WEB报告</title>
+    <style>
+        body {
+            background-color: #3c3c3c;
+        }
+
+        .main {
+            width: 1200px;
+            height: 1100px;
+            margin: 0 auto;
+            background-color: #333333;
+            color: aliceblue;
+        }
+
+        h1 {
+            display: block;
+            text-align: center;
+            margin: 0 auto;
+
+        }
+
+        .p_all {
+            margin: 20px auto;
+        }
+
+        .paragraph {
+            width: 1000px;
+            margin-left: 20px;
+            margin: 20px auto;
+            text-indent: 2em;
+            line-height: 25px;
+        }
+
+        /*侧边栏选择器*/
+        .right {
+            float: right;
+            
+            margin: 0px 50px;
+        }
+        .right span {
+          
+            background-color: #c1c1c1;
+        }
+        .sidenav {
+            height: 100%;
+            width: 0;
+            /*原始宽度为0*/
+            position: fixed;
+            z-index: 1;
+            top: 0px;
+            right: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        /*侧边栏选项选择器*/
+        .sidenav a {
+            padding: 10px 10px 10px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        /*侧栏标签和关闭按钮光标的效果*/
+        .sidenav a:hover,
+        .offcanvas a:focus {
+            color: #007acc;
+        }
+
+        /*侧栏和关闭按钮的位置选择器*/
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        /*当文档高度小于450px时，改变侧栏的padding属性和字体大小*/
+        @media screen and (max-height: 450px) {
+            .sidenav {
+                padding-top: 15px;
+            }
+
+            .sidenav a {
+                font-size: 18px;
+            }
+        }
+
+    
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="tubiao1">
+        </div>
+        <!--侧栏页面设计-->
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="introduce.html">搜索页面</a>
+            <a href="index.html">个人档案</a>
+            <a href="warriors.html">Warriors</a>
+            <a href="lakers.html">Lakers</a>
+            <a href="login.html">登陆页面</a>
+
+        </div>
+        <div class="right">
+            <span style="font-size:30px; cursor:pointer" onclick="openNav()">&#9776;</span>
+        </div>
+    </div>
+
+    <!-- 报告内容 -->
+    <div class="main">
+        <h1>通信软件开发与应用</h1>
+        <div class+="p_all">
+            <div class="paragraph">
+                <h3>做的什么:</h3>
+
+                <p>
+                    我共做了5个页面，分别是个人档案页面、网站页面（搜索页面）、美国职业篮球联赛（NBA）球队勇士Warriors和湖人（Lakers）的页面、外加一个登录页面。
+                </p>
+            </div>
+            <div class="paragraph">
+                <h3>开发过程:</h3>
+
+                <p>
+                    根据作业要求，我选择用HTML+纯CSS+JavaScript来构建一个关于我喜欢的NBA球队的WEB网页介绍。
+                    首先我跟随老师的网站(qige.io)大致了解了一些关于三剑客（HTML+纯CSS+JavaScript）的基础知识。
+                    然后课下又在B站上相对系统的学习了HTML+纯CSS+JavaScript。大致利用一些零零散散的时间学习一个月后开始我的网页制作。
+                    首先，我从我的搜索页面开始布局。先写好页面的header部分和footer部分（这是5个页面共有的）然后，
+                    构建好版心的大致思路（如给定版心宽度1200px）。版心上边放入一个搜索框，
+                    版心左边用一个div盒子，右边用一个div盒子，然后右边的div盒子再分为左右，分别放入视频和背景图片。
+                    然后，我开始构思Warriors的布局。我觉得该页面最大亮点就是百叶窗的设计。
+                    我借助CSDN的一位博主的百叶窗设计，将其写法改造后运用到了Warriors页面上。
+                    写完Warriors的页面后，我又着手与Lakers页面的设计上，该页面的最大亮点是右上角的按钮，和轮播图的设计。
+                    这两种设计都运用了JS的知识。 再然后我开始想要引入一个登录页面，这个登录页面比较简单，
+                    只能对邮箱账号和密码进行验证，不过有一个翻转的效果。
+                    最后写了一个个人档案的主页面。这个页面的亮点是用box-shadow来给图片加了一个阴影的效果，比较简单，但也算是实用。
+                </p>
+            </div>
+            <div class="paragraph">
+                <h3>遇到的问题:</h3>
+
+                <p>
+                    在制作过程中我遇到的问题有很多，我在搜索页面设想实现搜索功能时要用到的JS的知识（JS知识不是很熟悉），
+                    在版心部分想要放入一个视频，老师的网站（qige.io）给我提供了具体方法。
+                    在制作Warriors页面时，在B站上的学习才使得球队Logo和文字的布局解构变得美观。
+                    在Lakers页面。轮播图的设计困扰我好久。但在B站上的学习给了我很多帮助。
+                </p>
+            </div>
+            <div class="paragraph">
+                <h3>如何解决:</h3>
+
+                <p>
+                    首先非常感谢老师的帮助。在qige.io网站上学习到如何在网页上放入视频和音频。
+                    其次是B站上的教学视频，我从上面学习到如何运用css使得布局变得美观和设计网页页面时要有整体框架，
+                    没有层次感和逻辑性的代码绝不会做出多么漂亮的页面。
+                    再次、感谢CSDN上的博主，让我学会了一种设计方式：轮播图效果。
+                </p>
+            </div>
+            <div class="paragraph">
+                <h3>哪些未解决:</h3>
+
+                <p>
+                    由于最开始的设计原因，在搜索页面有一个小缺点：
+                    在缩放页面的的时候搜索框中的“搜索”会跑到搜索框的下面。
+                    原本设计时让5个页面共同使用base.css和common.css部分代码，
+                    但我在设计几个页面的时候没有留意页面的宽度和高度的设计，
+                    使得其他页面不能公用base.css和common.css的代码，需要再单独拿出来修改，这造成了代码冗余。
+                </p>
+            </div>
+            <div class="paragraph">
+                <h3>总结；</h3>
+
+                <p>
+                    "纸上得来终觉浅，绝知此事要躬行"，此诗句用来形容本次web页面设计最适合不过了，
+                    我在学习过程中常常处于“眼高手低”的状态。总是觉得简单不过的事情之去看而懒得动手去做。在做的过程中才体会到这句诗的真正含义。
+                    感谢老师的的授课和网站的内容给了我一些指点，也感谢B站上的教学视频让我对HTML+纯CSS有了更加扎实的基础，
+                    能够较为熟练的运用这些知识。“耳闻之不如目见之，目见之不如足践之，足践之不如手辨之”。
+                    我知道，之后的学习之路还很漫长，正如个人档案上的一句话:“编程绝非孤独的旅行”。
+                    这条路需要去与老师同和学不断地交流，也需要不断地尝试和坚持。
+                </p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+<script type="text/ecmascript">
+    /*改变原始宽度（0）*/
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "255px";
+    }
+    /*恢复原始宽度0*/
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+</html>

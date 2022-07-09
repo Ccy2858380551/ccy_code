@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>小米02</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+        }
+        .father_box {
+            /* float: left; */
+            width: 1300px;
+            height: 480px;
+            background-color: pink;
+            /* 居中 */
+            margin: 100px auto;
+        }
+
+        .son_left {
+            float: left;
+            width: 230px;
+            height: 460px;
+            background-color: rgb(193, 255, 192);
+        }
+
+        .son_right {
+            float: right;
+            width: 970px;
+            height: 460px;
+            background-color: #007acc;
+        }
+
+        /* 把a转换成块级元素 */
+        a {
+            display: inline-block;
+            font-size: 12px;
+            width: 230px;
+            background-color: #55585a;
+            color: #ffffff;
+            text-decoration: none;
+            /* text-indent: 2em; */
+            padding: 0 0 0 21px;
+            /* 垂直居中，借助height的值，让文字的行高=盒子的高度*/
+            line-height: 40px;
+        }
+
+        /* 经过链接变换颜色 */
+        a:hover {
+            background-color: #ff6700;
+        }
+        .ul_box {
+            width: 1226px;
+            height: 285px;
+            background-color: #0081ff;
+            margin: 20px auto;
+        }
+        .ul_box li {
+            width: 296px;
+            height: 285px;
+            background-color: pink;
+            float: left;
+            margin-right: 14px;
+        }
+        .ul_box li.last {
+            margin-right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father_box">
+        <div class="son_left">
+            <a href="#">手机 电话卡</a>
+            <a href="#"> 电视 盒子</a>
+            <a href="#">笔记本</a>
+            <a href="#">出行穿戴</a>
+            <a href="#">健康儿童</a>
+        </div>
+        <div class="son_right"></div>
+    </div>
+    <ul class="ul_box">
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li class="last">4</li>
+    </ul>
+</body>
+
+</html>

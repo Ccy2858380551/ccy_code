@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+           width: 249px;
+           height: 50px;
+           background-color: hotpink; 
+           /* 将行内元素转换为块儿级元素 */
+           display:block;
+        }
+        div {
+
+            width: 300px;
+            height: 100px;
+            background-color: lightsalmon;
+            /* 块级元素转换为行内元素(内联元素) */
+            display:inline;
+        }
+        /* 转换为行内块元素  display:inline-block*/
+        span{
+            width:100px;
+            height: 30px;
+            background-color: cyan;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="#">行内元素转换为块儿级元素</a>
+    <a href="#">行内元素转换为块儿级元素</a>
+    <div>这是div块级元素转换为行内元素</div>
+    <span>转换为行内块元素</span>
+</body>
+</html>

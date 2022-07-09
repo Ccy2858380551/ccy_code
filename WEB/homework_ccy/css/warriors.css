@@ -1,0 +1,199 @@
+* {
+    /* 去除页面边距 */
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    background-color: #212326;
+}
+ul li {
+    /* 去除li的点 */
+    list-style: none;
+}
+a {
+    color: #666;
+    text-decoration: none
+}
+a:hover{
+    color:#125ea5;
+}
+/* header部分 */
+.header {
+    width: 1540px;
+    height: 500px;
+    background-color: #ffe801;
+
+}
+
+/* 百叶窗部分 */
+.box {
+    position: absolute;
+    top: 500px;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #FFF;
+    background-color: rgba(33, 35, 38,0.3);
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    /* box-shadow: 5px 5px 7px rgba(255, 255, 255, 0.5); */
+    border-bottom: 0;
+}
+
+.box li {
+    float: left;
+    position: relative;
+    width: 180px;
+    /* 未悬停时默认的 单张 图片宽/高度 */
+    height: 100%;
+    box-shadow: 0 0 25px #000000;
+    transition: all 0.5s;
+}
+
+.box img {
+    height: 100%;
+    width: 500px;
+
+}
+
+/* 百叶窗图片下的文字部分 */
+.box li .text {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 26px;
+    color: #FFF;
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 30px;
+    background: #000;
+    background-color: rgba(177, 166, 166, 0.7);
+}
+
+.box:hover li {
+    /* 鼠标经过某张图片时其他图片的样式 */
+    width: 180px;
+}
+
+/* 鼠标经过时的li  */
+.box li:hover {
+    width: 460px;
+}
+
+/* 介绍部分 */
+.introduce {
+    position: absolute;
+    top: 1210px;
+    width: 100%;
+    height: 500px;
+    /* background-color: #212326; */
+}
+
+.tubiao {
+    margin-top: 78px;
+    float: left;
+    width: 190px;
+    height: 190px;
+    /* background-color: #fff; */
+    margin-left: 100px;
+    
+}
+
+.introduce .warriors{
+    margin: 141px 50px 0 50px ;
+    color: #FFF;
+}
+.introduce .paragraph {
+    margin: 100px 50px 0 50px;
+    /* background-color: pink; */
+}
+.introduce h3{
+    display: block;
+    height: 25px;
+    color: #125ea5;
+    margin: 100px 0 10px 50px;
+    padding: 10px 0 10px 41px;
+    background-color: #e4b429;
+}
+.introduce .p1{
+    width: 600px;
+    height:140px;
+    font-size: 20px;
+    margin: 0px 50px 0 50px;
+    text-indent: 2em;
+    color: #e4b429;
+    background-color: #125ea5;
+}
+.introduce .p2{
+    width: 600px;
+    height:190px;
+    font-size: 20px;
+    margin: 0px 50px 0 50px;
+    text-indent: 2em;
+    color: #e4b429;
+    background-color: #125ea5;
+}
+.introduce .p3{
+    width: 600px;
+    height:180x;
+    font-size: 20px;
+    margin: 0px 50px 0 50px;
+    text-indent: 2em;
+    color: #e4b429;
+    background-color: #125ea5;
+}
+
+/* 底部模块制作 */
+.footer {
+    position: absolute;
+    top: 2100px;
+    height: 415px;
+    width: 100%;
+    background-color: #f1f1f1;
+    /* background-color: #f5f5f5; */
+    padding-top: 30px;
+}
+.mod_service {
+    height: 80px;
+    width: 100%;
+    border-bottom: 2px solid #1e1e1e;
+    /* background-color: #fff; */
+}
+.mod_service ul{
+    color: #fff;
+}
+
+.mod_help {
+    height: 185px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+.mod_help dl {
+    /* background-color: #fff; */
+    float: left;
+    width: 416px;
+}
+.mod_help dl:last-child {
+    /* background-color: #fff; */
+    width: 90px;
+    text-align: center;
+}
+.mod_help dl dt {
+    font-size: 16px; 
+    margin-bottom: 10px;
+}
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+.links {
+    margin-bottom: 15px;
+}
+.links a {
+    margin: 0 3px;
+}
+.copyright {
+    line-height: 20px;
+}

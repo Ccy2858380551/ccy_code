@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>清除浮动的4种方法</title>
+    <style>
+        /* 第三种清除浮动clearfix */
+        /* .clearfix::after{
+            content: "";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        /* 照顾 IE6、7版本浏览器 */
+         /* .clearfix {
+              *zoom: 1;
+         } */
+
+
+         /*第四种 */
+         .clearfix:before,
+         .clearfix:after {
+             content: "";
+              /* 转换为表格  */
+             display: table;
+         }
+         .clearfix:after {
+             clear:both;
+         }
+         .clearfix {
+              *zoom: 1;
+         }
+
+         .box {
+            /* 第二种 清除浮动,加overflow: hidden;*/
+            /* overflow: hidden; */
+            width: 800px;
+            border:1px solid pink;
+            background-color: red;
+            margin:0 auto;
+        }
+        .damao {
+            float: left;
+            background-color: #0081ff;
+            width: 30px;
+            height: 80px;
+           
+        }
+        .ermao {
+            float: left;
+            background-color: #8181ff;
+            width: 30px;
+            height: 40px;
+        }
+        .footer {
+            height: 200px;
+            background-color: black;
+        }
+        /* 第一种 在最后的浮动元素加clear  */
+        /* .clear {
+            clear: both;
+        } */
+    </style>
+</head>
+<body>
+    <!-- 第三种清除浮动 -->
+    <div class="box clearfix">
+        <div class="damao">大毛</div>
+        <div class="ermao">二毛</div>
+        <!-- 第一种清除浮动 -->
+        <!-- <div class="clear"></div> -->
+    </div>
+    <!-- 在最后加clear -->
+    <div class="footer"></div>
+    
+</body>
+</html>

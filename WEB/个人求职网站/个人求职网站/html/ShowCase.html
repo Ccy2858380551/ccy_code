@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>作品展示</title>
+		<link href="../css/head.css" rel="stylesheet"/>
+		<style type="text/css">
+			.box{
+				width: 1200px;
+				height: 1050px;
+				background-color: #FFFFFF;
+				font-size: 14px; 
+				font-family: "微软雅黑";
+				position: relative;
+			}
+			.box1, .box2{
+				width: 1000px;
+				height: 150px;
+				margin: auto;
+			}
+			.box2{
+				height: 800px;	
+			}
+			.img1,.img2{
+				width: 450px;
+				height: 190px;
+				overflow: hidden;
+				margin-top: 50px;
+				border-radius: 15px;
+				box-shadow: 10px 10px 5px #ebe8e1;
+			}
+			.img1:hover{
+				box-shadow: 10px 10px 5px #ff8726;
+
+			}
+			.img2:hover{
+				box-shadow: 10px 10px 5px #ff8726;
+
+			}
+			.img1 img{
+				width: 100%;	
+			}
+			.img2 img{
+				width: 100%;
+			}
+			.img1{
+				float: left;
+			}
+			.img2{
+				float: right;
+			}
+			.h2{
+				padding: 30px 0px;
+				text-align: center;
+			}
+			.p1{
+				padding: 0px 40px;
+				text-align: center;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="top_head">
+				<h2>小凶许| 个人网站</h2>
+			</div>
+			<!-- 导航栏 -->
+			<div class="top_nav">
+				<ul>
+					<li id="li_1"><a href="../index.html">网站首页</a></li>
+					<li><a href="AboutMe.html">个人档案</a>
+						<ul id="ul_1">
+							<li><a href="Education.html">教育背景</a></li>
+							<li><a href="Experience.html">我的特长</a></li>
+						</ul>
+					</li>
+					<li><a href="ShowCase.html" style="color: #FF8726;">我的作品</a></li>
+					<li><a href="Photo.html">个人相册</a></li>
+					<li><a href="Objective.html">求职意向</a></li>
+					<li><a href="Contact.html">联系方式</a></li>
+				</ul>
+			</div>
+			<div id = top_nav1></div>
+			
+			<!-- 作品展示 -->
+			<div class="box">
+				<div class="box1">
+					<h2 class="h2">我的作品</h2>
+					<p class="p1">以下几个静态页面虽然不算是成功的案例，但也代表着我对HTML和CSS的热爱。不足之处，请多多指教。</p>
+				</div>
+				
+				<!-- 图片展示 -->
+				<div class="box2">
+					<div class="box2_1">
+						<div class="img1">
+							<img src="../img/gallery/image_01_s.jpg" />
+						</div>
+						<div class="img2">
+							<img src="../img/gallery/image_02_s.jpg" />
+						</div>
+					</div>
+					<div class="box2_1">
+						<div class="img1">
+							<img src="../img/gallery/image_03_s.jpg" />
+						</div>
+						<div class="img2">
+							<img src="../img/gallery/image_04_s.jpg" />
+						</div>
+					</div>
+					<div class="box2_1">
+						<div class="img1">
+							<img src="../img/gallery/image_05_s.jpg" />
+						</div>
+						<div class="img2">
+							<img src="../img/gallery/image_06_s.jpg" />
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!--页脚-->
+		<footer><center>xx学院 2019软件工程2 20191111111 小凶许</center></footer>
+		</div>
+	</body>
+</html>

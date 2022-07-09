@@ -1,0 +1,86 @@
+<!DOCTYPE html><!-- 文档类型的声明标签-->
+<html lang="en"><!--定义当前文档显示的语言-->
+<head>
+    <meta charset="UTF-8"><!---->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ccy的第一个页面</title>
+</head>
+<body>
+<br>
+    <h1 id="one">这里是顶部</h1>
+    <h1> 一级标签</h1><!--标题标签 h1到h6 -->
+    <h2> 二级标签</h2>
+    大苏打的程度
+    写代码真快乐
+    <p>这是第一段</p><!--段落标签-->
+    <br/>这里换一行<!--break缩写，单标签，不需要结束标签，换行标签，另起一行-->
+    <p>这是第二段</p>
+    我<strong>加粗</strong>了<!-- 加粗标签，推荐strong -->
+    我<b>也加粗</b>了<!-- 加粗标签 -->  <br>
+    这是<em>倾斜</em>的<!--倾斜文字 ，推荐em-->
+    我<i>也倾斜了</i><!--倾斜文字 -->
+    这里<del>删除了</del><br /><!--删除标签，推荐del-->
+    我也<s>删除</s>
+    <br><!--删除标签--></br >
+    是<ins>下划线</ins><!-- 下滑线 -->
+    我也是<u>下划线</u><!-- 下滑线 -->
+
+    <div>这里是“div”，单独占一行</div>
+    <div>这里是“div”，单独占一行</div>
+    <span>一行可以放多个span </span>
+    <span>一行可以放多个span </span><br>
+    <h3>下面是图片标签:</h3>
+    <h4> title 提示文本，鼠标放到图片上有提示</h4>
+
+    <img src="ccyimg01.jpg" title="健身运动">  <!--单标签--> <!--src是必须属性，指定图像的文件路径和文件名-->
+    <h3> alt替换文本，图像显示不出来用文字替换:</h3>
+    <img  src="000ccy01test.jpg" alt="这是我的LOG" title="体育健身运动"/>
+    <h4> 图像设定高度</h4>
+    <!-- 只设高的话，图片的宽等比例放大缩小 -->
+    <img  src="ccyimg01.jpg" width="500" height="500"/><br>
+    <!-- 给图像设边框 -->
+    <img  src="ccyimg01.jpg" width="500"  border= "15"/><br>
+
+    <!-- 下一级路径 -->
+    <h4>下一级路径</h4>
+    <img src="综合案例/图像/01.jpg"/><br>
+
+
+    <!-- 上一级路径 -->
+    <h4>下一级路径</h4>
+    <img src="../ccy_img/ccyimg02.jpg" alt="这是我的LOG"/><br>
+
+    <!-- 绝对路径 -->
+    <img src="D:\ccy_vscode_code\ccyimg03.jpg" />
+    <br>
+    <img src="https://img0.baidu.com/it/u=2862534777,914942650&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500" />
+
+    <h3>超链接标签:</h3>
+    <!-- 超链接标签 -->
+    <!-- anchor :锚 , href为连接目标url地址，target:指定链接页面格式-->
+    <!--target="_self 在此页面打开，target="_blank" 另外再打开个新页面"-->
+    <a href="http://www.qq.com" target="_blank">腾讯</a>
+
+    <a href="gongsijjianjie.html " target="_blank">公司简介</a>
+    <!--空链接 -->
+    <h3>下面是一个空链接</h3>
+    <a href="#">这是一个空链接</a>
+    <h3>下载链接，地址是 .exe,zip等形式</h3>
+    <a href="ccyimg01.zip">点我下载</a>
+    <h4>网页元素链接，点击图片跳转页面</h4>
+    <a href="http://www.baidu.com" target="_blank"><img src="ccyimg01.jpg"></a>
+    <!-- 锚点链接 -->
+    <h4>锚点链接，快速定位到页面的某个位置</h4>
+    <a href="#two">点击这里,到第二集介绍</a>
+    <br><br><br><br>
+    <br><br><br><br>
+    <h3 id="two">第二集介绍</h3>
+    <a href="#one">点击&nbsp&nbsp这里，返回顶部</a>
+
+    <h4>下面是特殊空格</h4>
+    一&nbsp;&nbsp;&nbsp;&nbsp;二
+
+
+</body>
+</html>

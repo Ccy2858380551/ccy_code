@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>轮播图</title>
+</head>
+<!-- style 里面是css样式 因为代码较少就没有再次创建 -->
+<style>
+    /* 盒子1的样式 */
+    .slideshow_box1 {
+        /* width: 722px;
+        height: 358px; */
+        margin: 0 auto;
+        /* 超出的位置将隐藏并且不占位 */
+        overflow: hidden;
+    }
+
+    .slideshow_box {
+        /* width: 2200px;
+        height: 352px; */
+        animation: move 100s infinite;
+    }
+
+    @keyframes move {
+        0% {
+            transform: translateX(0);
+        }
+
+        30% {
+            transform: translateX(-722px);
+        }
+
+        60% {
+            transform: translateX(-1422px);
+        }
+
+        100% {
+            transform: translateX(-1422px);
+        }
+    }
+
+    .slideshow_box img {
+        float: left;
+        height: 100px;
+        width: 120px;
+    }
+</style>
+
+<body>
+    <div class="slideshow_box1">
+        <div class="slideshow_box">
+            <img src="../liuchaoyang/images/临时文件/1.jpg" alt="">
+            <img src="../liuchaoyang/images/临时文件/2.jpg" alt="">
+            <img src="../liuchaoyang/images/临时文件/3.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

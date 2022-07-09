@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>主页</title>
+		<link href="css/head.css" rel="stylesheet"/>
+		<style type="text/css">
+		
+			.img1{
+				width: 1200px;
+				height: 500px;
+				background-image: url(img/index-bg1.jpg);
+			}
+			.data{
+				padding-top:10px ;
+				width: 1200px;
+				height: 580px;
+				background-color: #fff;
+			}
+			.right{
+				width: 400px;
+				height: 400px;
+				margin-right: 80px;
+				margin-top: 20px;
+				float: right;
+				overflow: hidden;
+			
+				
+			}
+			.right img{
+				height: 100%;
+				
+			}
+			.left{
+				width: 500px;
+				height: 400px;
+				margin: 20px 0px 0px 80px;
+				float: left;
+				background-image: url(img/index-a2.jpg);
+				overflow: hidden;
+				background-size: 100% 100%;
+				box-shadow: 10px 10px 5px #888888;    
+			}
+			.u2{
+				width: 250px;
+				float: right;	
+			}
+			.left li{
+				list-style-type: none;
+				width: 230px;
+				line-height: 33px;
+				border-bottom: 2px #ccc dashed;
+			}
+			.u2{
+				float: right;	
+				padding-top:10px ;
+				margin-right: 80px;
+			}
+			.h2{
+				padding: 20px;
+			}
+			.btn{
+				position: fixed;
+				right: 30px;
+				top: 50px;
+			}
+			.btn input{
+				width: 40px;
+				height: 20px;
+				background-color:#ff8726;
+				color: #FFFFFF;
+				border: none;
+			}
+		</style>
+		
+	</head>
+	
+	<body>
+		
+		<div id="container">	
+			<div class="top_head">
+				<h2>小凶许| 个人网站</h2>
+			</div>
+			<!-- 导航栏 -->
+			<div class="top_nav">
+				<ul>
+					<li id="li_1"><a href="#" style="color: #FF8726;">网站首页</a></li>
+					<li><a href="html/AboutMe.html">个人档案</a>
+						<ul id="ul_1">
+							<li><a href="html/Education.html">教育背景</a></li>
+							<li><a href="html/Experience.html">我的特长</a></li>
+						</ul>
+					</li>
+					<li><a href="html/ShowCase.html">我的作品</a></li>
+					<li><a href="html/Photo.html">个人相册</a></li>
+					<li><a href="html/Objective.html">求职意向</a></li>
+					<li><a href="html/Contact.html">联系方式</a></li>
+				</ul>
+			</div>
+			<div id = top_nav1></div>
+			
+			<!-- 主图片 -->
+			<div class="img1">  </div>
+			
+			<!-- 本人资料 -->
+			<div class="data">
+				<h2 class="h2">本人资料</h2>
+				<div class="left">
+					<div class="u2">
+					<ul>
+						<li>姓  名：小凶许</li>
+						<li>性 别：男 </li>
+						<li>名族：汉</li>
+						<li>出生年月：1998年12月</li>
+						<li>籍贯：XX省XX市</li>
+						<li>所在学院：XX学院</li>
+						<li>学历：本科</li>
+						<li>所学专业：软件工程</li>
+						<li>特长：网页制作、软件应用</li>
+						<li>联系电话：15235608888</li>
+						<li>E-mail: xiao1220@qq.com</li>
+					</ul>
+					</div>
+				</div>
+				<div class="right">
+					
+					<img src="img/index-a1.jpg"  />
+				</div>
+			</div>
+			
+		</div>
+		<audio src="audio/bgm.mp3" id="myaudio" controls="controls" loop="false" hidden="true">
+
+    </audio>
+    <div class="btn">
+	    <input type="button" onclick="autoPlay()" value="播放" />
+	    <input type="button" onclick="closePlay()" value="关闭" />
+    </div>
+		<!--页脚-->
+		<footer><center>xx学院 2019软件工程2 20191111111 小凶许</center></footer>
+		
+			
+		<!-- 控制音乐播放 -->
+		<script language="javascript" type="text/javascript">
+			document.getElementById("myaudio").play();
+	        function autoPlay() {
+	            var myAuto = document.getElementById('myaudio');
+	            myAuto.play();
+	        }
+	        function closePlay() {
+	            var myAuto = document.getElementById('myaudio');
+	            myAuto.pause();
+	            myAuto.load();
+	        }
+	    </script>
+	</body>
+</html>

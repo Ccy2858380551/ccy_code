@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../CSS/footer.css">
+    <style>
+    /* header */
+        .header {
+            float: right;
+            height: 780px;
+            width: 100px;
+            text-align: center;
+            line-height: 100px;
+            margin: 0 20px;
+            background-color: #3c3c3c;
+        }
+
+        .hyrz,
+        .hzw,
+        .yjdwb,
+        .ss,
+        .ll,
+        .lzy{
+            height: 100px;
+            width: 100px;
+            background-color: #3c3c3c;
+        }
+        .header a {
+            color:#fff;
+        }
+        .header a:hover {
+            color: #c81623;
+        }
+        /* 底部模块制作 */
+        .footer {
+            position: absolute;
+            top: 1140px;
+            height: 415px;
+            width: 100%;
+            background-color: #f1f1f1;
+            /* background-color: #f5f5f5; */
+            padding-top: 30px;
+        }
+
+        .mod_service {
+            height: 80px;
+            width: 100%;
+            border-bottom: 2px solid #1e1e1e;
+            /* background-color: #fff; */
+        }
+
+        .mod_service ul {
+            color: #fff;
+        }
+
+        .mod_help {
+            height: 185px;
+            border-bottom: 1px solid #ccc;
+            padding-top: 20px;
+            padding-left: 130px;
+        }
+
+        .mod_help dl {
+            /* background-color: #fff; */
+            float: left;
+            width: 340px;
+        }
+
+        .mod_help dl:last-child {
+            /* background-color: #fff; */
+            width: 220px;
+            text-align: center;
+        }
+
+        .mod_help dl dt {
+            font-size: 16px;
+            margin-bottom: 10px;
+            margin-inline-start: -30px;
+        }
+
+        .mod_copyright {
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .links {
+            margin-bottom: 15px;
+        }
+
+        .links a {
+            margin: 0 3px;
+        }
+
+        .copyright {
+            line-height: 20px;
+        }
+
+        .footer a {
+            color: #000;
+        }
+
+        .footer a:hover {
+            color: #c81623;
+        }
+
+
+        /* 版面中心 */
+        .w {
+            width: 1200px;
+            background-color: #1e1e1e;
+            margin: 0 auto;
+            color: #f1f1f1;
+        }
+
+        a {
+            color: #666;
+            text-decoration: none
+        }
+
+        a:hover {
+            color: #c81623;
+        }
+
+        h1 {
+            text-align: center;
+            display: block;
+        }
+
+        .m_left {
+            background-color: #ffab53;
+        }
+
+        .m_right {
+            position: absolute;
+            left: 1112px;
+            top: 63px;
+        }
+
+        .middle {
+            width: 800px;
+            height: 700px;
+            margin-left: 20px;
+        }
+
+        .middle h3 {
+            text-indent: 1.5em;
+        }
+
+        .middle p {
+            line-height: 50px;
+            text-indent: 2em;
+        }
+
+
+
+        *{padding: 0;margin: 0;}
+			figure{
+				width: 33.3%;
+				height: 365px;
+				float: left;
+				overflow: hidden;
+				position: relative;
+			}
+			figure img{
+				height:100%;
+				transition: all 1s;
+			}
+			figure:hover img{
+				-webkit-transform: translateX(-10px);
+				-moz-transform: translateX(-10px);
+				-ms-transform: translateX(-10px);
+				-o-transform: translateX(-10px);
+				transform: translateX(-10px);
+				opacity: 0.5;
+			}
+			figure ul,li{
+                list-style: none;
+            }
+            /* figure li{
+				list-style: none;
+			} */
+            figure h2 {
+                position: absolute;
+				transition: all 0.5s;
+				color: #000;
+            }
+            figure p{
+                position: absolute;
+				transition: all 0.5s;
+				color: #000;
+            }
+            figure li{
+                position: absolute;
+				transition: all 0.5s;
+				color: #000;
+            }
+			figure div{
+				position: absolute;
+				transition: all 0.5s;
+				color: #000;
+			}
+        /* 动画1 */
+			.effect1 h2{
+				
+				left:10%;
+				bottom:60%;
+				
+			}
+			.effect1 p{
+				
+				left:10%;
+				top:100%;
+				color: #000;
+			}
+			.effect1:hover h2{
+				-webkit-transform: translateY(-15px);
+				-moz-transform: translateY(-15px);
+				-ms-transform: translateY(-15px);
+				-o-transform: translateY(-15px);
+				transform: translateY(-15px);
+			}
+			.effect1:hover p{
+				/*-webkit-transform: translateY(-30px);
+				-moz-transform: translateY(-30px);
+				-ms-transform: translateY(-30px);
+				-o-transform: translateY(-30px);
+				transform: translateY(-30px);*/
+				top:80%;
+			}
+        
+    </style>
+</head>
+
+<body>
+    
+    <div class="header">
+        <div class="hyrz"><a href="index.html" target="_blank">火影忍者</a> </div>
+        <div class="hzw"><a href="hzw.html" target="_blank">海贼王</a> </div>
+        <div class="yjdwb"><a href="yjdwb.html" target="_blank">妖精的尾巴</a> </div>
+        <div class="ss"><a href="ss.html" target="_blank">死神</a></div>
+        <div class="ll"><a href="linglong.html" target="_blank">灵笼</a> </div>
+		<div class="lzy"><a href="index0.html">刘朝阳</a> </div>
+    </div>
+    <main class="w">
+        <div class="m_left">
+            <h1>黑崎一护</h1>
+        </div>
+        <div class="middle">
+            <h3>日本动漫《死神》中的主人公</h3>
+            <p>
+                黑崎一护，日本动漫《死神》中的男主人公，是灭却师与死神结合生下的后代，体内拥有虚的力量，
+                在一次家人遭到虚的攻击时，为了救下家人，从死神朽木露琪亚那里得到了死神之力，从而开启了死神代理的工作。
+                后来在尸魂界和虚圈中拯救了同伴，并打败了蓝染惣右介，被护廷十三队授予"尸魂界的英雄"的称呼。在千年血战中发挥着至关重要的作用。
+            </p>
+            <h3>角色背景</h3>
+            <p>
+                其名字“一护”的涵意，为“永远保护某一个东西”的意思。也因为其日文发音和“草莓”以及“15”的音相同，
+                所以剧中经常可以见到利用谐音代表一护的桥段（例如漫画第1章标题“Death and Strawberry”中的“Strawberry（草莓）”，
+                一护的房间门牌以“15”作为标示，假面军势的成员久南白也用“草莓（berry）”来称呼他，草鹿八千流则用“小一”来称呼。
+            </p>
+            <h3>身份背景</h3>
+            <p>
+                黑崎一护的头发是橘色（天生），瞳孔棕色，初登场为高中1年级生。
+                是纯种灭却师与死神结合生下的后代，他有两个妹妹，游子和夏梨。
+                本身是个拥有能“看”“听”及“触”和“说”的高级灵体的能力者。
+            </p>
+        </div>
+        <div class="m_right"><img src="../images/黑崎一护.jpg" alt="">
+            <div><img src="../images/黑崎一护02.jpg" alt=""></div>
+        </div>
+
+
+		<!-- 动画1 -->
+		<figure class="effect1">
+			<img src="../images/临时文件/死神.jpg"/>
+			<!-- <h2>平移动画</h2> -->
+			<p> 正是因为我们看不见,那才可怕。——黑崎一护 </p>
+		</figure>
+        <figure class="effect1">
+			<img src="../images/临时文件/朽木白哉.jpg"/>
+			<!-- <h2>平移动画</h2> -->
+			<p>不能被“心”所迷惑。因为它有时会说谎。——朽木白哉</p>
+		</figure>
+        <figure class="effect1">
+			<img src="../images/临时文件/更木剑八.jpg"/>
+			<!-- <h2>平移动画</h2> -->
+			<p>你的刀是砍不到我的。——更木剑八</p>
+		</figure>
+    </main>
+
+
+    <!-- footer-->
+    <footer class="footer">
+        <div>
+            <div class="mod_service">
+
+            </div>
+            <div class="mod_help">
+                <dl>
+                    <dt>感谢</dt>
+                    <dd><a href="#">王勇老师</a></dd>
+                </dl>
+                <dl>
+                    <dt>学习网址</dt>
+                    <dd><a href="https://qige.io/">qige.io</a></dd>
+                    <dd><a href="https://www.bilibili.com/video/BV14J4114768?p=1">bilibili.com</a></dd>
+                </dl>
+                <dl>
+                    <dt>——ナルト</dt>
+                    <dd><a href="#">わたくし私はいつもそっちょく率直にいっ言っています
+                        </a></dd>
+                    <dd><a href="#">これがおれ俺のおし忍みち道だ!</a></dd>
+                </dl>
+
+                <dl>
+                    <dt>我的QQ</dt>
+                    <dd>
+                        1804936839
+                    </dd>
+                </dl>
+            </div>
+            <div class="mod_copyright">
+                <div class="copyright">
+                    あなたはわたくし私をつよい強いとおもっ思っているが、それはわたくし私がしっぱい失敗ばかりしてくやしー悔しいからつよ強がっているだけなのだ。——ナルト
+                    <br>
+                    虽然你觉得我很强悍，但那只是因为我老是失败，觉得不甘心，所以才逞强的。——鸣人
+                </div>
+                <br>
+                <div class="copyright">
+                    こんなとき時にあきらめるな。ちゅーにん中忍になれなくても、べつ別のみち道でほかげ火影になる。これがおれ俺のおし忍みち道だ。——ナルト
+                    <br>
+                    我才不要在这种时候放弃，即使当不成中忍，我也会通过其他的途径成为火影的，这就是我的忍道 ——鸣人
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

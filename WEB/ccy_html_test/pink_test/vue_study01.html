@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 引入vue -->
+    <script type="text/javascript" src="../js/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        {{ name }}
+    </div>
+
+    
+    <script>
+        var app = new Vue({
+            el: '#app',//指定当前Vue实例用于哪个容器，值通常为CSS选择器字符串
+            //data中用于存储数据，供el指定容器使用
+            data:{
+                 name:'123'
+            }
+        })
+    </script>
+</body>
+
+</html>

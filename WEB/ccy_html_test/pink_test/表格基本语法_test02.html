@@ -1,0 +1,276 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+ </head>
+ <body>
+     <!-- 这里不重要，了解即可，主要通过css来写 -->
+
+     <!-- align 表格居left,right,center -->
+     <!-- border 显示边框 -->
+     <!-- cellpadding 单元格内部文字与单元格边框的距离-->
+     <!-- cellspacing 单元格与单元格之间的距离 -->
+    <table align="center" border="" cellpadding="25" cellspacing="0" width="500 " height="15">
+        <!-- th是表头单元格，效果:加粗，居中显示 -->
+        <tr>  <th>姓名&nbsp;&nbsp;</th>      <th>性别&nbsp;&nbsp;&nbsp;&nbsp;</th>  <th> 年龄 </th>  </tr>
+        <tr>  <td>张飞 </td>  <td> 男</td>  <td> 18 </td>  </tr>
+        <tr>  <td>刘德华</td>  <td>男</td>  <td> 35 </td>  </tr>
+
+    </table>
+
+    <!-- 必须要有table标签 -->
+    <table align="center" border="1" cellpadding="10"  cellspacing="0" >
+        <!-- <thead>内部必须有<tr>标签，一般位于第一行 -->
+        <thead>
+            <tr> <th>排名</th> 
+                 <th>关键词</th> 
+                 <th>趋势</th> 
+                 <th>今日搜索</th> 
+                 <th>最近搜索</th> 
+                 <th>相关链接</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr> <td>1</td>  <td>鬼吹灯</td>  <td><img src="ccyimg01.jpg " width="25"></td>             <td>1</td> <td>1</td> <td><a href="https://tieba.baidu.com" target="_blank">贴吧</a></td> </tr>   
+            <tr> <td>2</td>  <td>盗墓笔记</td>  <td><img src="../ccy_img/ccyimg02.jpg" width="15"></td> <td>2</td> <td>2</td> <td><a href="https://tieba.baidu.com" target="_blank">贴吧</a></td> </tr>
+            <tr> <td>3</td>  <td>西游记</td>  <td><img src="ccyimg01.jpg " width="25"></td>             <td>3</td> <td>3</td> <td><a href="https://tieba.baidu.com" target="_blank">贴吧</a></td> </tr>
+        </tbody>
+    </table>
+
+
+    <table  align="center" width="500" height="249 " border="1" cellspacing="0">
+        <tr>
+            <td></td> <td colspan="2"></td>
+            
+        </tr>
+        <tr>
+            <td rowspan="2"></td> <td></td> <td></td>
+        </tr>
+        <tr>
+                                  <td></td> <td></td>
+        </tr>
+    </table>
+
+    <!--  无序列表，重点很常用-->
+    <h4>您最喜欢的食物?(下面是无序列表:)</h4>
+    <!-- <ul>里面只能放<li>标签，否则不专业 -->
+    <ul type="square">
+        <!-- <li>里放啥都行 -->
+        <li>榴莲</li>
+        <li>臭豆腐</li>
+        <li>螺狮粉</li>
+        <li>
+            <p>鲱鱼罐头</p>
+        </li>
+    </ul>
+
+    <!-- 有序列表 -->
+    <h4>下面是有序列表:</h4>
+    <ol type="1">
+        <li>列表项1</li>
+        <li>列表项2</li>
+        <li>列表项3</li>
+    </ol>
+
+    <!-- 自定义列表 -->
+    <h4>下面是自定义列表:</h4>d
+    <dl>
+        <!-- <dl>中只出现<dt>或<dd>,别的不专业 -->
+        <dt>关注我们</dt>
+        
+        <dd>新浪微博</dd>
+        <dd>官方微信</dd>
+        <dd>联系我们</dd>
+    </dl>
+    <h1>以下是表单标签:</h1>
+    <form>
+        <!-- 文本框，注意有 placeholder 提示符 -->
+        用户名：<br>
+        <input type="text" name="name" placeholder="请输入用户名"><br>
+        <!-- 密码框 -->
+        密码：<br>
+        <input type="password" name="ps" placeholder="请输入密码"><br>
+        年龄：<br>
+        <!-- 数字输入框，注意 min 和 value 属性-->
+        <input type="number" name="age" min="18" value="18"><br>
+        <!-- 单选按钮, 注意 checked 属性 -->
+        性别：<br>
+        <input type="radio" name="gender" value="male" checked> 男<br>
+        <input type="radio" name="gender" value="female"> 女<br>
+        <input type="radio" name="gender" value="other"> 其它<br>
+        <!-- 下拉列表，注意 selected 属性 -->
+        党派：<br>
+        <select name="party">
+          <option value="D">民主党</option>
+          <option value="R" selected>共和党</option>
+          <option value="N">无党派</option>
+        </select><br>
+        <!-- 多选框 -->
+        您有哪些交通工具：<br>
+        <input type="checkbox" name="vehicle1" value="Bike"> 自行车<br>
+        <input type="checkbox" name="vehicle2" value="Motocycle" checked> 摩托车<br>
+        <input type="checkbox" name="vehicle3" value="Car"> 轿车<br>
+        <input type="checkbox" name="vehicle4" value="Jet"> 飞机<br>
+        <!-- 日期选择器 -->
+        您的工作日期：<br>
+        <input type="date"><br>
+        <!-- 文件选择器 -->
+        上传您的照片:<br>
+        <input type="file" name="photo"><br>
+        <!-- 文本输入区域，注意 rows 和 cols 属性 -->
+        您的建议：<br>
+        <textarea name="message" rows="5" cols="30">
+          The cat was playing in the garden.
+        </textarea><br><hr>
+        <!-- 表单提交/重置按钮，将表单中的数据取消或传输给服务器端进行处理 -->
+        <input type="submit" value="提 交">
+        <input type="reset" value="重 置">
+      </form>
+
+
+
+      <h1>下一个例子:</h1>
+      <form action="xxx.php" method="get">
+        <!-- input是单标签 type="text"文本框 -->
+        <label for="text01"> 用户名:</label> <input type="text" name="username"  value= “名字” placeholder="请输入用户名" id="text01"> <br>
+        <!-- type="password，密码框，用户看不见输入的密码 -->
+        密码:<input type="password"  name="password" placeholder="在这里输入密码"placeholder="在这里输入密码"  maxlength="6"> <br>
+        <!--type ="radio" 单选按钮  -->
+        <!-- 性别有相同的名字，实现多选一 -->
+        性别: <label for="male">男</label> <input type ="radio" name="sex" value="male" checked="checked" id="male"> 
+        <label for="female">女</label> <input type ="radio" name="sex" value="female" id="female" > 
+        <label for="other">它</label> <input type ="radio" name="sex" value="other" id="other">  <br>
+        <!--type="checkbox" 多选按钮 -->
+        <!-- 有name后台知道用户选择哪一个 -->
+        爱好: 吃饭<input type="checkbox" name="hobby" value="eat" checked="checked"> 
+              睡觉<input type="checkbox" name="hobby" value="sleep" checked="checked"> 
+              打游戏<input type="checkbox" name="hobby" value="play_game"> <br>
+        <input type="submit" value="注册一下" >
+        <input type="reset" value="重置一下">
+        <input type="button" value="获取短信验证码"><br>
+        <!-- 上传文件 -->
+        <input type="file" value="上传文件">
+        <br>
+        籍贯:
+        <!-- select下拉表单 -->
+        <select name="" id="">
+            
+            <option value="" >重庆</option>
+            <option value="">河北</option>
+            <option value="" selected="selected">北京</option>
+            <option value="">四川</option>
+        </select>
+        <br>
+        <!-- textarea文本域 -->
+        <textarea cols="30" rows="10" >    请在这里写!</textarea>
+    </form>
+
+
+    <h2>下面又是一个例子:</h2>
+    <h4>注册页面</h4>
+    <h3>青春不常在，抓紧谈恋爱</h3>
+
+    <table width="500" border="0" cellspacing="8">
+        <!-- 第一行 -->
+        <tr> 
+            <td>性别:</td> 
+            <td>
+        <label for="male1"><img src="" alt="">男</label> <input type ="radio" name="sex1" value="male1"  id="male1"> 
+        <label for="female1"><img src="" alt="">女</label> <input type ="radio" name="sex1" value="female1" id="female1" checked="checked"> 
+        <label for="other1"><img src="" alt="">其它</label> <input type ="radio" name="sex1" value="other1" id="other1">  <br>
+            </td>
+        </tr>
+        <!-- 第二行 -->
+        <tr>
+            <td>生日:</td>
+            <td><input type="date"></td>
+        </tr>
+        <!-- 第三行 -->
+        <tr>
+            <td>所在地区:</td>
+            <td><input type="text"  placeholder="填写所在地区" value=></td>
+        </tr>
+        <!-- 第四行 -->
+        <tr>
+            <td>婚姻状况:</td>
+            <td>
+                 <input type="radio" name="marital_status" id="unmarried" value="unmarried" checked="checked"><label for="unmarried" >未婚</label>
+                 <input type="radio" name="marital_status" id="married" value="married"><label for="married">已婚</label>
+                 <input type="radio" name="marital_status" id="divorce" value="divorce"><label for="divorce">离婚</label>
+            </td>
+        </tr>
+        <!-- 第五行 -->
+        <tr>
+            <td>学历:</td>
+            <td>
+                <select name="" id="">
+                    <option value="" >小学</option>
+                    <option value="" >初中</option>
+                    <option value="" >高中</option>
+                    <option value="" >本科</option>
+                    <option value="" selected="selected">研究生</option>
+                </select>
+            </td>
+        </tr>
+        <!-- 第六行 -->
+        <tr>
+            <td>喜欢的类型:</td>
+            <td>
+                <input type="checkbox" name="Bike" value="Bike"> 自行车<br>
+                <input type="checkbox" name="Vehicle" value="Vehicle"> 汽车<br>
+            </td>
+        </tr>
+        <!-- 第七行 -->
+        <tr>
+            <td>
+                个人介绍:
+            </td>
+            <td>
+                <textarea name="" id="" cols="30" rows="2" placeholder="请输入"></textarea>
+            </td>
+        </tr>
+        <!-- 第八行 -->
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit"  value="免费注册" name="" id="">
+            </td>
+        </tr>
+        <!-- 第九行 -->
+        <tr>
+            <td></td>
+            <td>
+                <input type="checkbox" checked="checked">我同意注册条款
+
+            </td>
+        </tr>
+        <!-- 第十行 -->
+        <tr>
+            <td></td>
+            <td>
+                <a href="#">我是会员,立即登陆</a>
+
+            </td>
+        </tr>
+        <!-- 第十一行 -->
+        <tr>
+            <td></td>
+            <td>
+                <h5>我承诺</h5>
+                <ul>
+                    <li>
+                        年满18岁
+                    </li>
+                    <li>
+                        真诚的寻找另一半
+                    </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    
+ </body>    
+ </html>

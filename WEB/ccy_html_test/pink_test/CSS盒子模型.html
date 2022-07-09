@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ch">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* CSS第一行代码 */
+        /* 清楚默认内外边距 */
+        * {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .nav {
+            height: 41px;
+            /* 垂直居中 */
+            line-height: 41px;
+            background-color: #fcfc;
+            /* 边框的粗细
+            border-width: 5px;
+            /* 边框的样式  solid 实线, dashed 虚线, 点线 dotted*/
+            /* border-style: solid; */
+            /* border-color: pink;  */
+
+            /* 边框的复合写法,没有顺序要求*/
+            /* border: 5px solid pink; */
+            border-top: 3px solid #ff8500;
+            border-bottom: 1px dashed #edeef0;
+            /* 内边距 */
+            /* padding-left: 20px; */
+            /* 内边距复合写法*/
+            /* 从上开始,顺时针 */
+            /* padding: 20px 5px 15px 30px; */
+        }
+
+        .nav a {
+            display: inline-block;
+            font-size: 12px;
+            color: #4c4c4c;
+            text-decoration: none;
+            height: 40;
+            padding: 0px 20px 0px 20px;
+        }
+
+        /* 鼠标经过 */
+        .nav a:hover {
+            background-color: #eee;
+            color: #ff8500;
+        }
+
+        .one {
+            color: aqua;
+            background: #ff8500;
+            /* 内边距 */
+            padding: 0px 20px 0px 20px;
+            /* 外边距 */
+            /* 外边距简写方式和padding一样,顺时针 */
+            margin-top: 25px;
+            margin-bottom: 25px;
+        }
+
+        .header {
+            width: 900px;
+            height: 200px;
+            background-color: #ff66ff;
+            /*块级盒子水平居中*/
+            margin: 0 auto;
+            /* 行内元素和行内块元素水平居中: 给其父元素添加text-align: center*/
+            /* 看成文字 */
+            text-align: center;
+        }
+
+        .father {
+            width: 400px;
+            height: 400px;
+            background-color: #47da82;
+            margin-top: 50px;
+            /* 一、解决塌陷问题,为父元素定义上边框 */
+            /* border: 1px solid transparent; */
+            /* 二、解决塌陷问题,为父元素定义上内边框*/
+            /* padding-top: 1px; */
+            /* 三、为父元素添加 overflow: hidden;*/
+            overflow: hidden;
+        }
+
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: #5647da;
+            margin-top: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#">新浪导航</a>
+        <a href="#">手机新浪网</a>
+        <a href="#">客户端</a>
+        <a href="#">微博</a>
+    </div>
+    <div class="one">
+        wo
+    </div>
+    <div class="header">
+        头部
+        <span>行内元素</span>
+        <br>
+        <img src="综合案例/图像/bg1.png" alt="">
+    </div>
+    <div class="father">
+        <div class="son">
+            哈哈哈
+        </div>
+    </div>
+</body>
+
+</html>

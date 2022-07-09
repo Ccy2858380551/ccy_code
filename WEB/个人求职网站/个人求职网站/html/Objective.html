@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>求职意向</title>
+		<link href="../css/head.css" rel="stylesheet"/>
+		<style type="text/css">
+			.objective{
+				width: 1200px;
+				height: 1100px;
+				border: 1px #ccc solid; 
+				font-size: 14px; 
+				font-family: "微软雅黑";
+				background-color: #FFFFFF;
+			}
+			.left{
+				padding-top: 20px;
+				width: 300px;
+				height: 480px;
+				position: fixed;
+				background-color: #ff8726;
+				color: #FFFFFF;
+				text-align: center;
+			}
+			.via {
+				width: 100px;
+				border-radius:50% ;
+				margin: 30px auto 0px;
+				overflow: hidden;
+			}
+			.via img{
+				width: 100%
+			}
+			h3{
+				text-align: center;
+				padding: 50px 0px;
+			}
+			.a1{
+				
+				text-align: center;
+				
+				width: 200px;
+				margin: 70px auto;
+			}
+			.a1 a{
+				text-decoration: none;
+				color: #ff8726;
+				padding: 15px 50px;
+				line-height: 30px;
+				background-color: #FFFFFF;
+				border-radius: 5%;
+			}
+			.a1:hover a{
+				background-color: #ff8726;
+				color: #FFFFFF;
+				border: 1px solid #FFFFFF;
+			}
+			
+			.right{
+				padding-top:20px ;
+				float: right;
+				width: 800px;
+				height: 500px;
+				margin-right: 70px;
+			}
+			.right_top{
+				width: 300px;
+				margin: 0px auto 50px;
+				text-align: center;
+			}
+			.h3{
+				padding: 30px;
+			}
+			hr{
+				margin-bottom: 30px;
+			}
+			/* 进度条样式 */
+			.right_main > .container {
+			  width: 100%;
+			  background-color: #ddd;
+			}
+			.right_main p{
+				color: #ff8726;
+				padding: 10px;
+			}
+			.skills {
+			  text-align: right;
+			  padding-right: 20px;
+			  line-height: 30px;
+			  color: white;
+			}
+			
+			.html {width: 90%; background-color: #4CAF50;}
+			.css {width: 80%; background-color: #2196F3;}
+			.js {width: 65%; background-color: #f44336;}
+			.php {width: 60%; background-color: #808080;}
+			.right_main ul{
+				padding-top: 20px;
+			}
+			.right_main ul li{
+				width: 500px;
+				line-height: 30px;
+				margin: 30px 0px 0px 200px;
+			}
+			.h32{
+				width: 200px;
+				margin-left: 45px;
+			} 
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div class="top_head">
+				<h2>小凶许| 个人网站</h2>
+			</div>
+			<!-- 导航栏 -->
+			<div class="top_nav">
+				<ul>
+					<li id="li_1"><a href="../index.html">网站首页</a></li>
+					<li><a href="AboutMe.html">个人档案</a>
+						<ul id="ul_1">
+							<li><a href="Education.html" >教育背景</a></li>
+							<li><a href="Experience.html">我的特长</a></li>
+						</ul>
+					</li>
+					<li><a href="ShowCase.html">我的作品</a></li>
+					<li><a href="Photo.html">个人相册</a></li>
+					<li><a href="Objective.html" style="color: #FF8726;">求职意向</a></li>
+					<li><a href="Contact.html">联系方式</a></li>
+				</ul>
+			</div>
+			<div id = top_nav1></div>
+			
+			<!-- 求职意向内容 -->
+			<div class="objective">
+				<!-- 左端固定 -->
+				<div class="left">
+					<div class="via"><img src="../img/objective-me.jpg" /></div>
+					<h3 class="h32">我是小凶许，一个软件工程专业毕业生。</h3>
+					 am studious and aspirant, honest, dedicated, with a strong sense of responsibility,to work seriously, rigorous and responsible.
+					<div class="a1"><a href="../index.html">了解更多</a></div>
+				</div>
+				<div class="right">
+					<div class="right_top">
+					<h3 class="h3">技能与能力</h3>
+					<hr />
+					Skills and Abilities
+					</div>
+					<div class="right_main">
+						<!-- 进度条 -->
+						<p>HTML</p>
+						<div class="container">
+						  <div class="skills html">90%</div>
+						</div>
+						
+						<p>CSS</p>
+						<div class="container">
+						  <div class="skills css">80%</div>
+						</div>
+						
+						<p>JavaScript</p>
+						<div class="container">
+						  <div class="skills js">65%</div>
+						</div>
+						
+						<p>JAVA</p>
+						<div class="container">
+						  <div class="skills php">60%</div>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<div class="right_top">
+					<h3 class="h3">求职意向</h3>
+					<hr />
+					Job Intention 
+					</div>
+					<div class="right_main">
+						<ul>
+							<li>	网页设计类工作 ，对静态网站进行开发，网页设计师</li>
+							<li>	程序设计类，程序开发、程序维护，设计人员，初级程序员</li>
+							<li>	参与需求调研、项目可行性分析、技术可行性分析和需求分析</li>
+							
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+			<!--页脚-->
+		<footer><center>xx学院 2019软件工程2 20191111111 小凶许</center></footer>
+		</div>
+	</body>
+</html>

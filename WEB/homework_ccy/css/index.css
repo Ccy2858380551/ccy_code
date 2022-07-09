@@ -1,0 +1,147 @@
+body{
+				background-color: #212326;
+			}
+			*{
+				padding: 0px;
+				margin: 0px;
+			}
+			a {
+				color: #666;
+				text-decoration: none
+			}
+			
+			a:hover {
+				color: #c81623
+			}			
+			#container{
+				width: 1200px;
+				margin: 0px auto; 
+				border: 1px solid #ccc;
+				background-image: url(../img/bg.jpg);
+				
+			}
+			/* 页头样式 */
+			.top_head{
+				background-color: #333333;
+				height: 100px;
+				color: #fff;	
+				line-height: 100px;
+				padding-left: 150px;
+			}
+			
+			.top_nav{
+				width: 1200px;
+				margin: 0px auto;
+				height:150px ;
+				position: absolute;
+				z-index:999
+			}
+			.top_nav ul{
+				list-style: none;
+			}
+			.top_nav>ul>li{
+				background-color: #232323;
+				line-height: 60px;
+				float: left;
+				margin: 0px;
+
+			}
+			.top_nav>ul>li>ul{
+				display: none;
+			}
+			.top_nav>ul>li:hover{
+				color: #fff;
+				border-bottom: 5px solid #FF8726;
+			}
+			.top_nav>ul>li:hover ul{
+				color: #FF8726;
+				display: block;
+				padding: 0px;
+			}
+			#ul_1>li:hover{
+				background-color: #FF8726 ;
+			}
+			#ul_1>li>a:hover{
+				color: #FFFFFF;
+			}
+			.top_nav a{
+				text-decoration: none;
+				padding: 10px 50px;
+				color: #fff;
+			}
+			.top_nav a:hover{
+				color: #ff8726;
+			}
+			#li_1{
+				margin-left:100px ;
+			}
+			#top_nav1{
+				height: 60px;
+				background-color: #232323;
+				position: static;
+			}
+			
+	
+/* 底部模块制作 */
+.footer {
+    position: absolute;
+    /* top: 1200px; */
+    height: 415px;
+    width: 1200px;
+    background-color: #f1f1f1;
+    /* background-color: #f5f5f5; */
+    padding-top: 30px;
+}
+
+.mod_service {
+    height: 80px;
+    width: 100%;
+    border-bottom: 2px solid #1e1e1e;
+    /* background-color: #fff; */
+}
+
+.mod_service ul {
+    color: #fff;
+}
+
+.mod_help {
+    height: 185px;
+    border-bottom: 1px solid #ccc;
+    padding-top: 20px;
+    padding-left: 50px;
+}
+
+.mod_help dl {
+    /* background-color: #fff; */
+    float: left;
+    width: 340px;
+}
+
+.mod_help dl:last-child {
+    /* background-color: #fff; */
+    width: 90px;
+    text-align: center;
+}
+
+.mod_help dl dt {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.mod_copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.links {
+    margin-bottom: 15px;
+}
+
+.links a {
+    margin: 0 3px;
+}
+
+.copyright {
+    line-height: 20px;
+}
+

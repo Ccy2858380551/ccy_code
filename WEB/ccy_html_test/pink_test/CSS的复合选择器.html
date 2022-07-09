@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="外部样式表.css">
+
+    <style>
+        body {
+            font: 25px/28px 'Microsoft yahei';
+        }
+
+        /* 后代选择器 */
+        /* 元素1父级 元素2子级（后代就行） */
+        ol li {
+            color: pink;
+        }
+
+        /* ol li a  这样也行 */
+        ol a {
+            color: aqua;
+        }
+
+        .nav li a {
+            color: darkorange;
+        }
+
+        /* 子选择器 */
+        /* 选亲儿子元素 */
+        div>p {
+            color: rgb(255, 0, 13);
+        }
+
+        /* 并集选择器 */
+        div,
+        p,
+        .pig li{
+            color: aqua;
+        }
+        a {
+            color: gray;
+        }
+        /* 伪类选择器 */
+        /* 未访问的链接*/
+        a:link {
+            color: #333333;
+            text-decoration: none;
+        }
+        /* 已经访问过的链接 */
+        /* a:visited {
+            color: rgb(0, 255, 132);
+        } */
+        /* 选择鼠标经过的链接 */
+        a:hover {
+            color: blueviolet;
+        }
+        /* 选择鼠标正在点击的链接 */
+        a:active {
+            color: green;
+        }
+        /* :foncus选择器 */
+        /* 把获得光标的input元素选取出来 */
+        input:focus{
+            color: #ff0000;
+            background-color: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>ol中的li</li>
+        <li>ol中的li</li>
+        <li>ol中的li</li>
+        <li><a href="#">在li里面孙子级别链接</a></li>
+    </ol>
+    <ul>
+        <li>ul中的li</li>
+        <li>ul中的li</li>
+        <li>ul中的li</li>
+    </ul>
+    <ol class="nav">
+        <li>ol中的li</li>
+        <li>ol中的li</li>
+        <li>ol中的li</li>
+        <li><a href="#">类的后代选择器链接</a></li>
+    </ol>
+    <div>
+        <p>大儿子</p>
+        <p>二儿子
+            <a href="#">孙子链接</a>
+        </p>
+
+    </div>
+
+    <div>并集选择器</div>
+    <p>1</p>
+    <span>2</span>
+    <ul class="pig">
+        <li>佩奇</li>
+        <li>乔治</li>
+    </ul>
+    <a href="#">伪类选择器链接</a>
+    <br >
+    <span>:foncus选择器,点击变色:</span>
+    <input type="text">
+    
+    
+</body>
+
+</html>

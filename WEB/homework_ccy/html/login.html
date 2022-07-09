@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登陆界面</title>
+    <link rel="stylesheet" href="../css/login.css">
+
+
+</head>
+
+<body>
+
+    <div id="loginDiv">
+        <form action="#" id="form">
+            <h1 style="text-align: center;color: aliceblue;">立即登录</h1>
+            <p>邮箱:<input id="email" type="text"><label id="name_trip"></label>
+            </p>
+
+            <p>密码:<input id="password" type="password"><label id="password_trip"></label></p>
+
+            <div style="text-align: center;margin-top: 30px;">
+                <input type="submit" class="button" value="登录" onclick="check()">
+                <input type="button" class="button" onclick='location.href=("注册界面.html")' value="注册">
+            </div>
+        </form>
+    </div>
+
+</body>
+
+<script>
+
+    function check() {
+        var inputEmail = document.getElementById("email");
+        // 获取输入内容
+        var uEmail = inputEmail.value;
+        // 检测邮箱格式
+        if (!/^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-])+/.test(uEmail)) {
+            alert("邮箱不合法");
+            return false;
+        }
+
+        //获取用户名输入项
+        var userNname = document.getElementById("password");
+        var uName = userNname.value;
+        if (uName.length < 6 || uName.length >= 15) {
+            alert("账号长度需要大于6位小于15位");
+            return false;
+        }
+        window.open("introduce.html");
+    }
+
+</script>
+
+</html>
